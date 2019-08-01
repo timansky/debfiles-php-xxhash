@@ -1,0 +1,3 @@
+[submodule "xxhash-1.0.1"]
+	path = xxhash-1.0.1
+	url = git@github.com:Megasaxon/php-xxhash.git
