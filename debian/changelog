@@ -1,0 +1,23 @@
+php-xxhash (1.0.1-2+megasaxon) bionic; urgency=low
+
+  * New: first version of this extension
+  * Fix: remove hexdump references
+  * Tweaks to see if we can compile xxhash as a built-in module
+  * Fix: definition of phpext_xxhash_ptr had trailing semi-colon
+  * Fix: segfault introduced with header file changes
+  * Upgrade xxHash to r49
+  * Upgrade xxHash to r40
+  * Add xxhash64 support
+  * Update project readme to be more useful
+  * Add xxHash to credits
+  * Have the two xxHash functions return a digest rather than an integer.
+  * Working PHP7 version
+  * Remove comments to fix configure.js.
+
+ -- Timur Kumakbayev <timansky@neko.kz>  Tue, 30 Jul 2019 11:27:34 +0600
+
+php-xxhash (1.0.1-1+megasaxon) bionic; urgency=low
+
+  * Initial release
+
+ -- Timur Kumakbaev <timansky@neko.kz>  Wed, 31 Jul 2019 03:58:56 +0600

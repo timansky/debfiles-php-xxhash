@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+export DH_PHP_VERSIONS="7.0 7.1 7.2 7.3"
+
+PECL_NAME_OVERRIDE=xxhash
+
+include /usr/share/dh-php/pkg-pecl.mk
