@@ -5,10 +5,7 @@ Maintainer: Timur Kumakbayev <timansky@neko.kz>
 Build-Depends: debhelper (>= 10),
                dh-php (>= 0.33~),
                libtool,
-               php7.0-dev,
-               php7.1-dev,
-               php7.2-dev,
-               php7.3-dev
+               php-all-dev
 Standards-Version: 4.1.2
 Homepage: https://github.com/Megasaxon/php-xxhash
 Vcs-Git: https://github.com/Megasaxon/php-xxhash.git
