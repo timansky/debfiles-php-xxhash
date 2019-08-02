@@ -2,8 +2,9 @@ Source: php-xxhash
 Section: php
 Priority: optional
 Maintainer: Timur Kumakbayev <timansky@neko.kz>
-Build-Depends: debhelper (>= 10),
-               dh-php (>= 0.33~),
+Build-Depends: debhelper (>= 9),
+               dh-php (>= 0.34~),
+               gcc,
                libtool,
                php-all-dev
 Standards-Version: 4.1.2

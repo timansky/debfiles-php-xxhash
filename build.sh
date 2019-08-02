@@ -45,9 +45,11 @@ rm -rf debian/php-xxhash
 apt-get update
 apt-get install ${_APT_FLAGS_COMMON} ${_MAIN_PACKAGES}
 
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
 add-apt-repository -y -u ppa:ondrej/php
+apt-get update
 
 # install build deb dependencies
 mk-build-deps -t "apt-get ${_APT_FLAGS_COMMON}" --install debian/control
 
-dpkg-buildpackage --root-command=fakeroot --build=binary --jobs=${_NB_PROC} --no-sign --unsigned-source --post-clean --pre-clean
+dpkg-buildpackage -rfakeroot -b -j${_NB_PROC} -uc -us -tc
